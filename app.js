@@ -13,8 +13,8 @@ createApp({
   methods: {
     login() {
       const url = `${this.apiUrl}/admin/signin`;
-      const username = document.querySelector("#username").value;
-      const password = document.querySelector("#password").value;
+      const username = document.querySelector("#username").value.trim();
+      const password = document.querySelector("#password").value.trim();
       const user = {
         username,
         password
