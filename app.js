@@ -7,7 +7,9 @@ createApp({
       isValid: {
         username: true,
         password: true
-      }
+      },
+      username: "",
+      password: ""
     };
   },
   methods: {
@@ -43,6 +45,7 @@ createApp({
                 title: message,
                 text: "請重新登入"
               });
+              this.password = "";
             }
           });
       }
